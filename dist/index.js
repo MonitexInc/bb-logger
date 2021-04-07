@@ -117,7 +117,7 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   }
 
   return newRequire;
-})({"DKfX":[function(require,module,exports) {
+})({"rAQg":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -140,7 +140,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
  * @param  {function | null} err Expects Error() to be passed in from where the error occured
  * @return {json}
  */
-var _default = BBLogger = /*#__PURE__*/function () {
+var BBLogger = /*#__PURE__*/function () {
   var _ref = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee(apiEndpoint, severity, location, userAgent, message, err) {
     var eventDate, event, settings, res, logResponse;
     return regeneratorRuntime.wrap(function _callee$(_context) {
@@ -189,6 +189,7 @@ var _default = BBLogger = /*#__PURE__*/function () {
   };
 }();
 
+var _default = BBLogger;
 exports.default = _default;
 },{}],"Focm":[function(require,module,exports) {
 "use strict";
@@ -206,5 +207,5 @@ Object.defineProperty(exports, "BBLogger", {
 var _BBLogger = _interopRequireDefault(require("./lib/BBLogger"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-},{"./lib/BBLogger":"DKfX"}]},{},["Focm"], null)
+},{"./lib/BBLogger":"rAQg"}]},{},["Focm"], null)
 //# sourceMappingURL=/index.js.map

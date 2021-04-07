@@ -1,6 +1,6 @@
 {
   "name": "bb-logger",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "dist/index.js",
   "typings": "dist/index.js",
   "description": "Package used to log single line messages",
