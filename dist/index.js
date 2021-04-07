@@ -117,50 +117,13 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   }
 
   return newRequire;
-})({"z2hx":[function(require,module,exports) {
-
-"use strict"; // ref: https://github.com/tc39/proposal-global
-
-var getGlobal = function () {
-  // the only reliable means to get the global object is
-  // `Function('return this')()`
-  // However, this causes CSP violations in Chrome apps.
-  if (typeof self !== 'undefined') {
-    return self;
-  }
-
-  if (typeof window !== 'undefined') {
-    return window;
-  }
-
-  if (typeof global !== 'undefined') {
-    return global;
-  }
-
-  throw new Error('unable to locate global object');
-};
-
-var global = getGlobal();
-module.exports = exports = global.fetch; // Needed for TypeScript and Webpack.
-
-if (global.fetch) {
-  exports.default = global.fetch.bind(global);
-}
-
-exports.Headers = global.Headers;
-exports.Request = global.Request;
-exports.Response = global.Response;
-},{}],"rAQg":[function(require,module,exports) {
+})({"rAQg":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports.default = void 0;
-
-var _nodeFetch = _interopRequireDefault(require("node-fetch"));
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
 
@@ -197,7 +160,7 @@ var BBLogger = /*#__PURE__*/function () {
             };
             _context.prev = 3;
             _context.next = 6;
-            return (0, _nodeFetch.default)(apiEndpoint, settings);
+            return fetch(apiEndpoint, settings);
 
           case 6:
             res = _context.sent;
@@ -228,7 +191,7 @@ var BBLogger = /*#__PURE__*/function () {
 
 var _default = BBLogger;
 exports.default = _default;
-},{"node-fetch":"z2hx"}],"Focm":[function(require,module,exports) {
+},{}],"Focm":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {

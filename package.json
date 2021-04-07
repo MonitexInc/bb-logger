@@ -1,6 +1,6 @@
 {
   "name": "bb-logger",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "main": "dist/index.js",
   "typings": "dist/index.js",
   "description": "Package used to log single line messages",
@@ -8,6 +8,10 @@
     "type": "git",
     "url": "https://github.com/MonitexInc/bb-logger.git"
   },
+  "browserslist": [
+    "last 2 versions",
+    "safari >= 12"
+  ],
   "author": "Bitbuy Technologies Inc",
   "license": "MIT",
   "scripts": {
@@ -15,7 +19,6 @@
     "build": "parcel build index.js --no-minify --no-cache --public-url /"
   },
   "dependencies": {
-    "node-fetch": "^2.6.1",
     "parcel-bundler": "^1.12.5"
   }
 }
